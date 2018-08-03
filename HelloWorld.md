@@ -14,6 +14,8 @@ h) data frame
 i) array
 j) logical
 
+b),c),d),e),f),g),h),j)
+
 7. What is the class of the object defined by the expression x <- c(4, "a", TRUE)? [0.25]
 a) Logical
 b) integer
