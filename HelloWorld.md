@@ -22,20 +22,31 @@ b) integer
 c) character
 d) numeric
 e) mixed
-8. If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression
-cbind(x, y)? [0.5]a) a 2 by 3 matrix
+
+e)
+
+
+8. If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression cbind(x, y)? [0.5]
+a) a 2 by 3 matrix
 b) a 2 by 2 matrix
 c) a vector of length 3
 d) a matrix with 2 columns and 3 rows
 e) a 3 by 3 matrix
 f) a vector of length 2
-9. Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[2]] give me? Select all
-that apply. [0.25]
+
+d)
+
+
+9. Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[2]] give me? Select all that apply. [0.25]
 a) a list containing character vector with the letter "a".
 b) a list containing the number 2 and the letter "a".
 c) a character vector with the elements "a" and "b".
 d) a character vector of length 1.
 e) a character vector containing the letter "a".
+
+d),e)
+
+
 10. Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expression x + y? [0.25]
 a) a numeric vector with the values 1, 2, 5, 7.
 b) a numeric vector with the values 3, 5, 3, 4.
@@ -44,6 +55,9 @@ d) an error
 e) a warning
 f) an integer vector with the values 3, 5, 5, 7.
 g) an integer vector with the values 3, 5, 3, 4.
+
+f)
+
 11. Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that
 are less than 6 to be equal to zero. What R code achieves this? Select all that apply. [0.5]
 a) x[x == 0] < 6
@@ -57,13 +71,19 @@ h) x[x >= 6] <- 0
 i) x[x < 6] <- 0
 j) x[x <= 5] <- 0
 k) x[x == 0] <- 6
+
+g),k) f?
+
 12. Use the Session 1&2 Data Set (available on Moodle) to answer Questions 12-17.
-Extract the first 2 rows of the data frame and print them to the console. What does the output
-look like?
+Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
+
 13. How many observations (i.e. rows) are in this data frame?
 a) 45
 b) 129
-c) 153d) 160
+c) 153
+d) 160
+
+
 14. What is the value of Ozone in the 47th row? [0.25]
 a) 63
 b) 18
@@ -169,9 +189,11 @@ d) The values of free variables are searched for in the environment in which the
 called
 26. What is one of the consequences of the scoping rules used in R? [0.5]
 a) R objects cannot be larger than 100 MB
-b) All objects must be stored in memory
+b) All objects must be stored in memory  ---------
 c) Functions cannot be nested
 d) All objects can be stored on the disk
+
+
 27. In R, what is the parent frame? [0.5]
 a) It is the environment in which a function was called
 b) It is the environment in which a function was defined
