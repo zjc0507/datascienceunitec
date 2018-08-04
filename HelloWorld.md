@@ -77,6 +77,12 @@ g),k) f?
 12. Use the Session 1&2 Data Set (available on Moodle) to answer Questions 12-17.
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
 
+> data[1:2,]
+  Ozone Solar.R Wind Temp Month Day
+1    41     190  7.4   67     5   1
+2    36     118  8.0   72     5   2
+
+
 13. How many observations (i.e. rows) are in this data frame?
 a) 45
 b) 129
@@ -84,28 +90,43 @@ c) 153
 d) 160
 
 c)
+data <-read.csv("C:\\Users\\nini\\Desktop\\8026 DataScience\\hw1_data.csv",header=T)
+nrow(data)
 
 14. What is the value of Ozone in the 47th row? [0.25]
 a) 63
 b) 18
 c) 34
 d) 21
+
+d)
+
 15. How many missing values are in the Ozone column of this data frame? [0.25]
 a) 37
 b) 9
 c) 43
 d) 78
-16. What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA)
-from this calculation. [0.5]
+
+> data[47:47,1]
+[1] 21
+
+16. What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation. [0.5]
 a) 42.1
 b) 31.5
 c) 18.0
 d) 53.2
+
+a)
+mean(data$Ozone,na.rm=TRUE)
+
 17. What was the maximum Ozone value in the month of May (i.e. Month is equal to 5)? [0.5]
 a) 97
 b) 115
 c) 18
 d) 100
+
+b)
+
 18. Suppose I define the following function in R: [0.25]
 cube <- function(x, n) {
 }
@@ -116,6 +137,9 @@ a) An error is returned because 'n' is not specified in the call to 'cube'
 b) The number 27 is returned
 c) A warning is given with no value returned.
 d) The users is prompted to specify the value of 'n'.
+
+a?b?
+
 19. The following code will produce a warning in R. [0.5]
 x <- 1:10
 if(x > 5) {
@@ -126,6 +150,10 @@ b) You cannot set 'x' to be 0 because 'x' is a vector and 0 is a scalar.
 c) The syntax of this R expression is incorrect.
 d) 'x' is a vector of length 10 and 'if' can only test a single logical statement.
 e) The expression uses curly braces.
+
+d)
+
+
 20. Consider the following function [0.5]
 f <- function(x) {
 g <- function(y) {
@@ -142,6 +170,8 @@ a) 10
 b) 7
 c) 16
 d) 4
+
+
 21. Consider the following expression: [0.25]
 x <- 5
 y <- if(x < 3) {
@@ -150,9 +180,13 @@ NA
 10
 }
 What is the value of 'y' after evaluating this expression?
-a) 3b) 10
+a) 3
+b) 10
 c) 5
 d) NA
+
+b)
+
 22. Consider the following R function [0.5]
 h <- function(x, y = NULL, d = 3L) {
 z <- cbind(x,
@@ -172,11 +206,14 @@ b) z
 c) d
 d) l
 e) g
+
+
 23. What is an environment in R? [0.25]
 a) an R package that only contains data
 b) a collection of symbol/value pairs
 c) a list whose elements are all functions
 d) a special type of function
+
 24. The R language uses what type of scoping rule for resolving free variables? [0.25]
 a) global scoping
 b) compilation scoping
@@ -188,18 +225,21 @@ was defined
 c) The values of free variables are searched for in the global environment
 d) The values of free variables are searched for in the environment in which the function was
 called
+
 26. What is one of the consequences of the scoping rules used in R? [0.5]
 a) R objects cannot be larger than 100 MB
-b) All objects must be stored in memory  ---------
+b) All objects must be stored in memory  
 c) Functions cannot be nested
 d) All objects can be stored on the disk
 
+b)
 
 27. In R, what is the parent frame? [0.5]
 a) It is the environment in which a function was called
 b) It is the environment in which a function was defined
 c) It is always the global environment
 d) It is the package search list
+
 28. Take a look at the 'iris' dataset that comes with R. The data can be loaded with
 the code: library(datasets)
 data(iris)
@@ -208,6 +248,7 @@ by running ?iris
 There will be an object called 'iris' in your workspace. In this dataset, what is the mean of
 'Sepal.Length' for the species virginica? Please round your answer to the nearest whole
 number. [0.5]
+
 29. Continuing with the 'iris' dataset from the previous Question, what R code returns a vector of
 the means of the variables 'Sepal.Length', 'Sepal.Width', 'Petal.Length', and 'Petal.Width'? [0.5]
 a) colMeans(iris)
@@ -215,7 +256,9 @@ b) apply(iris, 1, mean)
 c) apply(iris, 2, mean)
 d) apply(iris[, 1:4], 1, mean)
 e) apply(iris[, 1:4], 2, mean)
-f) rowMeans(iris[, 1:4])30. What’s the value of f(3)? [0.5]
+f) rowMeans(iris[, 1:4])
+
+30. What’s the value of f(3)? [0.5]
 y<-10
 f<-function (x) {
 y <- 2
