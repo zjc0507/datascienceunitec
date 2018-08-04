@@ -83,6 +83,7 @@ b) 129
 c) 153
 d) 160
 
+c)
 
 14. What is the value of Ozone in the 47th row? [0.25]
 a) 63
