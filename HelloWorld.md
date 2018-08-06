@@ -72,7 +72,7 @@ i) x[x < 6] <- 0
 j) x[x <= 5] <- 0
 k) x[x == 0] <- 6
 
-g),k) f?
+a),b),c),d),e),f),g),h),i),j),k) 
 
 12. Use the Session 1&2 Data Set (available on Moodle) to answer Questions 12-17.
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
@@ -107,8 +107,7 @@ b) 9
 c) 43
 d) 78
 
-> data[47:47,1]
-[1] 21
+a)
 
 16. What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation. [0.5]
 a) 42.1
@@ -138,7 +137,7 @@ b) The number 27 is returned
 c) A warning is given with no value returned.
 d) The users is prompted to specify the value of 'n'.
 
-a?b?
+b)
 
 19. The following code will produce a warning in R. [0.5]
 x <- 1:10
@@ -170,6 +169,8 @@ a) 10
 b) 7
 c) 16
 d) 4
+
+a)
 
 
 21. Consider the following expression: [0.25]
@@ -207,6 +208,9 @@ c) d
 d) l
 e) g
 
+a)
+
+
 
 23. What is an environment in R? [0.25]
 a) an R package that only contains data
@@ -214,17 +218,25 @@ b) a collection of symbol/value pairs
 c) a list whose elements are all functions
 d) a special type of function
 
+b)
+
 24. The R language uses what type of scoping rule for resolving free variables? [0.25]
 a) global scoping
 b) compilation scoping
 c) dynamic scoping
-d) lexical scoping25. How are free variables in R functions resolved? [0.5]
+d) lexical scoping
+
+d)
+
+25. How are free variables in R functions resolved? [0.5]
 a) The values of free variables are searched for in the working directory
 b) The values of free variables are searched for in the environment in which the function
 was defined
 c) The values of free variables are searched for in the global environment
 d) The values of free variables are searched for in the environment in which the function was
 called
+
+d)
 
 26. What is one of the consequences of the scoping rules used in R? [0.5]
 a) R objects cannot be larger than 100 MB
@@ -240,14 +252,16 @@ b) It is the environment in which a function was defined
 c) It is always the global environment
 d) It is the package search list
 
+a)
+
 28. Take a look at the 'iris' dataset that comes with R. The data can be loaded with
 the code: library(datasets)
 data(iris)
-A description of the dataset can be found
-by running ?iris
+A description of the dataset can be found by running ?iris
 There will be an object called 'iris' in your workspace. In this dataset, what is the mean of
 'Sepal.Length' for the species virginica? Please round your answer to the nearest whole
 number. [0.5]
+
 
 29. Continuing with the 'iris' dataset from the previous Question, what R code returns a vector of
 the means of the variables 'Sepal.Length', 'Sepal.Width', 'Petal.Length', and 'Petal.Width'? [0.5]
@@ -267,3 +281,5 @@ y^2+g(x)
 g<-function(x) {
 x*y
 }
+
+34
